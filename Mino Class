@@ -1,0 +1,42 @@
+public class Mino { 
+// the Mino class constructs minos (2d arrays with color and set number of rotations)
+public static String minoName;
+public int[][] tetramino;
+public java.awt.Color minoColor;
+public int possibleRotations;
+
+
+public Mino(String name, Location[][] mino, java.awt.Color color, int numRotations)
+{
+    minoName = name;
+    tetramino = mino; 
+    minoColor = color;
+    possibleRotations = numRotations;
+}
+//returns mino name
+public String getName()
+{
+    return minoName;
+}
+//returns array of 1's and 0's
+public int[][] getArray()
+{
+    return tetramino;
+}
+//returns color of mino
+public java.awt.Color getMinoColor()
+{
+    return minoColor;
+}
+//returns number of rotations mino can be in 
+public int getNumRot()
+{
+    return possibleRotations;
+}
+//returns if that block is filled
+public boolean isFilled(int x, int y)
+{
+    return mino[x][y] == 1; 
+}
+
+}
