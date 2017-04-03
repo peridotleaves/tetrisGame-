@@ -8,7 +8,8 @@ import java.util.List;
 
 
 public class Grid {
-	
+
+	/* New comment */
 	public static final int MATRIX_WIDTH = 10;
     public static final int MATRIX_HEIGHT = 22;
     public static final int MATRIX_VISIBLE_HEIGHT= 20; 
@@ -303,4 +304,3 @@ public class Grid {
         
     }
 }
-
